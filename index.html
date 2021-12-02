@@ -7,79 +7,7 @@
     <title>brunoperry.net</title>
     <link rel="icon" href="favicon.png">
     <style>
-      :root {
-        --color-a: #262525;
-        --color-b: #b8c6d2;
-        --max-width: 800px;
-        --font: Arial, Verdana;
-        --speed: 0.35s;
-      }
-
-      html,
-      body {
-        position: relative;
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--color-a);
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      body {
-        max-width: var(--max-width);
-        margin: 0 auto;
-        background-color: var(--color-b);
-        display: flex;
-        flex-direction: column;
-        font-family: var(--font);
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity var(--speed) ease-in-out;
-      }
-
-      #container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        opacity: 0;
-        transform: translateY(50px);
-        transition: opacity var(--speed) ease-in-out,
-          transform var(--speed) ease-in-out;
-      }
-
-      svg {
-        max-height: 256px;
-        max-width: 256px;
-        margin: 0 auto;
-      }
-      h2 {
-        color: var(--color-a);
-        margin-top: 50px;
-        font-weight: 500;
-      }
-      a {
-        margin: 5px 0;
-        color: var(--color-a);
-      }
-
-      p {
-        position: absolute;
-        bottom: 15px;
-        margin: 0 auto;
-        font-size: 0.8rem;
-        color: var(--color-a);
-      }
-
-      @media (max-width: 800px) {
-        svg {
-          max-width: 212px;
-          max-height: 186px;
-        }
-      }
+     :root{--color-a:#262525;--color-b:#b8c6d2;--max-width:800px;--font:Arial,Verdana;--speed:0.35s}body,html{position:relative;display:block;margin:0;padding:0;width:100%;height:100%;background-color:var(--color-a);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{max-width:var(--max-width);margin:0 auto;background-color:var(--color-b);display:flex;flex-direction:column;font-family:var(--font);justify-content:center;align-items:center;opacity:0;transition:opacity var(--speed) ease-in-out}#container{display:flex;flex-direction:column;align-items:center;opacity:0;transform:translateY(50px);transition:opacity var(--speed) ease-in-out,transform var(--speed) ease-in-out}svg{max-height:256px;max-width:256px;margin:0 auto}h2{color:var(--color-a);margin-top:50px;font-weight:500}a{margin:5px 0;color:var(--color-a)}p{position:absolute;bottom:15px;margin:0 auto;font-size:.8rem;color:var(--color-a)}@media (max-width:800px){svg{max-width:212px;max-height:186px}}
     </style>
   </head>
   <body>
@@ -210,14 +138,7 @@
     <p>brunoperry@2021</p>
 
     <script>
-      window.onload = () => {
-        const container = document.querySelector('#container');
-        document.body.style.opacity = 1;
-        setTimeout(() => {
-          container.style.opacity = 1;
-          container.style.transform = 'translateY(0)';
-        }, 450);
-      };
+     window.onload=(()=>{const t=document.querySelector("#container");document.body.style.opacity=1,setTimeout(()=>{t.style.opacity=1,t.style.transform="translateY(0)"},450)});
     </script>
   </body>
 </html>
